@@ -46,11 +46,11 @@ export default function Header() {
 
 return (
 
-  <header className="flex items-center justify-between p-4 bg-gray-100 text-gray-900">
+  <header className="flex items-center justify-between p-4 lg:px-25 w-full bg-gray-100 text-gray-900">
 
-    <h1 className="text-xl font-bold w-1/3">&lt;<span className="text-blue-500">roel</span>.code /&gt;</h1>
+    <h1 className="text-xl font-bold w-fit lg:w-1/3">&lt;<span className="text-blue-500">roel</span>.code /&gt;</h1>
 
-    <nav className="w-1/3">
+    <nav className="w-fit lg:w-1/3">
 
       <ul className="flex space-x-10 justify-center">
         <li>
@@ -73,7 +73,7 @@ return (
     </nav>
 
     <div
-      className="text-lg font-semibold text-gray-700 w-1/3"
+      className="text-lg font-semibold text-gray-700 lg:w-1/3 not-lg:hidden"
     >
       <p id="hw-typewriter" className="text-right text-gray-400 m-0" style={{ minHeight: "1.5em" }}>
         console.log(	&apos;Hello, World!	&apos;)

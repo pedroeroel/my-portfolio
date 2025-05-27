@@ -12,7 +12,7 @@ export default function ProjectCard(
                 src={imageUrl}
                 alt={title}
                 width={500}
-                height={300}
+                height={250}
                 className="w-full bg-black h-48 object-cover rounded-t-lg mb-4"
             />
             <h2 className="text-xl font-semibold mb-2">{title}</h2>

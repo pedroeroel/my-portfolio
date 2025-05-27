@@ -7,13 +7,11 @@ export const metadata: Metadata = {
 
 export default function Home() {
   return (
-    <main  className='bg-gray-100 flex grow' >
-        {projectCard(
-          "Rafalia's Chronicles",
-          "This is a description of my project. It showcases my skills and creativity.",
-          "/rafalia-reader.png",
-          "https://rafalia-reader.vercel.app"
-        )}
+    <main  className='main' >
+      <section className='w-full h-full flex flex-col gap-5' >
+        <h2 className="font-bold text-5xl lg:text-6xl">Hey, I&apos;m Roel!</h2>
+        <p className="border-1">Fullstack developer, independent artist.</p>
+      </section>
   </main>
   );
 }

@@ -3,3 +3,9 @@
 body {
   font-family: Geist, 'Inter', sans-serif;
 }
+
+.main {
+  @apply flex flex-col grow ;
+  @apply bg-transparent ;
+  @apply justify-start items-center p-12 lg:p-25;
+}
