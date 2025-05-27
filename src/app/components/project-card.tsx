@@ -7,11 +7,13 @@ export default function ProjectCard(
     projectUrl: string,
 ) {
     return (
-        <div className="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow duration-300">
+        <div >
             <Image
                 src={imageUrl}
                 alt={title}
-                className="w-full h-48 object-cover rounded-t-lg mb-4"
+                width={500}
+                height={300}
+                className="w-full bg-black h-48 object-cover rounded-t-lg mb-4"
             />
             <h2 className="text-xl font-semibold mb-2">{title}</h2>
             <p className="text-gray-700 mb-4">{description}</p>
