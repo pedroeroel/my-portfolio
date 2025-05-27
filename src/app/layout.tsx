@@ -1,4 +1,4 @@
-import Header from"./components/header";
+import Header from "./components/header";
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
@@ -14,7 +14,10 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "<roel.code /> - Home",
+  title: {
+    default: `<roel.code />`,
+    template: `%s | <roel.code />`,
+  },
   description: "My portfolio website",
   icons: {
     icon: "/favicon.ico",
@@ -34,10 +37,10 @@ export default function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
-}>) 
-{
+}>) {
   return (
     <html lang="en">
+      
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased flex flex-col min-h-screen px-25 bg-gray-100`}
       >

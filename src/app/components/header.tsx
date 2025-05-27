@@ -1,5 +1,6 @@
 "use client";
 import { useEffect } from "react";
+import Link from "next/link"
 
 export default function Header() {
   useEffect(() => {
@@ -47,14 +48,18 @@ export default function Header() {
 }, []);
 
 return (
+
   <header className="flex items-center justify-between p-4 bg-gray-100 text-gray-900">
+
     <h1 className="text-xl font-bold w-1/3">&lt;<span className="text-blue-500">roel</span>.code /&gt;</h1>
+
     <nav className="w-1/3">
+
       <ul className="flex space-x-10 justify-center">
         <li>
-          <a href="/" className="border-b-2 not-hover:border-transparent  transition duration-200 ease-in-out">
+          <Link  href="/" className="border-b-2 not-hover:border-transparent  transition duration-200 ease-in-out">
             home
-          </a>
+          </Link>
         </li>
         <li>
           <a href="/about" className="border-b-2 not-hover:border-transparent  transition duration-200 ease-in-out">
@@ -67,7 +72,9 @@ return (
           </a>
         </li>
       </ul>
+
     </nav>
+
     <div
       className="text-lg font-semibold text-gray-700 w-1/3"
     >
@@ -75,5 +82,6 @@ return (
         console.log("Hello, World!")
       </p>
     </div>
+    
   </header>
 );}
