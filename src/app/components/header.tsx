@@ -9,6 +9,7 @@ export default function Header() {
     script.async = true;
     script.onload = () => {
       // @ts-expect-error
+      // TypewriterEffect is available globally after the script loads
       const Typewriter = window.Typewriter; 
       if (Typewriter) {
         const typewriterHelloElem = document.querySelector("#hello-typewriter");
