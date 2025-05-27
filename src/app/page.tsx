@@ -1,4 +1,3 @@
-import Link from 'next/link';
 import projectCard from "./components/project-card";
 import type { Metadata } from 'next';
 

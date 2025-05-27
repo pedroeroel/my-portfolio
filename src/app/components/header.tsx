@@ -8,11 +8,10 @@ export default function Header() {
     script.src = "https://unpkg.com/typewriter-effect@latest/dist/core.js";
     script.async = true;
     script.onload = () => {
-      // @ts-ignore
+      // @ts-expect-error
       const Typewriter = window.Typewriter; 
       if (Typewriter) {
         const typewriterHelloElem = document.querySelector("#hello-typewriter");
-        // @ts-ignore
         const typewriterHello = new Typewriter(typewriterHelloElem, {
           loop: true,
           delay: 75,
@@ -26,17 +25,15 @@ export default function Header() {
         .start();
       }
       const typewriterHelloWorldElem = document.querySelector("#hw-typewriter");
-      // @ts-ignore
-      
       const typewriterHelloWorld = new Typewriter(typewriterHelloWorldElem, {
         loop: true,
         delay: 75,
       });
       typewriterHelloWorld
-      .typeString("console.log('Hello, World!')")
+      .typeString("console.log(	&apos;Hello, World!	&apos;)")
       .pauseFor(1500)
       .deleteAll()
-      .typeString("print('Hello, World!')")
+      .typeString("print(	&apos;Hello, World!	&apos;)")
       .pauseFor(1000)
       .start();
       
@@ -79,7 +76,7 @@ return (
       className="text-lg font-semibold text-gray-700 w-1/3"
     >
       <p id="hw-typewriter" className="text-right text-gray-400 m-0" style={{ minHeight: "1.5em" }}>
-        console.log("Hello, World!")
+        console.log(	&apos;Hello, World!	&apos;)
       </p>
     </div>
     

@@ -1,3 +1,5 @@
+import Image from 'next/image';
+
 export default function ProjectCard(
     title: string,
     description: string,
@@ -6,7 +8,7 @@ export default function ProjectCard(
 ) {
     return (
         <div className="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow duration-300">
-            <img
+            <Image
                 src={imageUrl}
                 alt={title}
                 className="w-full h-48 object-cover rounded-t-lg mb-4"
