@@ -8,8 +8,7 @@ export default function Header() {
     script.src = "https://unpkg.com/typewriter-effect@latest/dist/core.js";
     script.async = true;
     script.onload = () => {
-      // @ts-expect-error
-      // TypewriterEffect is available globally after the script loads
+      // @ts-expect-error Typewriter is not defined
       const Typewriter = window.Typewriter; 
       if (Typewriter) {
         const typewriterHelloElem = document.querySelector("#hello-typewriter");
