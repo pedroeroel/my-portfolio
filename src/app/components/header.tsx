@@ -30,10 +30,10 @@ export default function Header() {
         delay: 75,
       });
       typewriterHelloWorld
-      .typeString("console.log(	&apos;Hello, World!	&apos;)")
+      .typeString("console.log('Hello, World!')")
       .pauseFor(1500)
       .deleteAll()
-      .typeString("print(	&apos;Hello, World!	&apos;)")
+      .typeString("print('Hello, World!')")
       .pauseFor(1000)
       .start();
       
