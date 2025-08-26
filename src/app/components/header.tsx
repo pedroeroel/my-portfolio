@@ -52,7 +52,7 @@ return (
 
     <nav className="w-fit lg:w-1/3">
 
-      <ul className="flex space-x-10 justify-center">
+      <ul className="space-x-10 justify-center hidden sm:flex">
         <li>
           <Link  href="/" className="border-b-2 not-hover:border-transparent  transition duration-200 ease-in-out">
             home
